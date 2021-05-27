@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		96BD46A14DFF90B48262F30F /* Pods_FlexSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1128F142210C595EFCAA18 /* Pods_FlexSwiftDemo.framework */; };
+		AD2F2E7F265E67A2008FF54B /* CustomViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = AD2F2E7E265E67A2008FF54B /* CustomViewController.xml */; };
+		AD2F2E82265E67B9008FF54B /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F2E81265E67B9008FF54B /* CustomViewController.swift */; };
+		AD2F2E9F265E6D88008FF54B /* CustomViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2F2E9E265E6D88008FF54B /* CustomViewController2.m */; };
 		D24F2EC51FF72D1900762ADC /* AttachmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24F2EC41FF72D1900762ADC /* AttachmentView.swift */; };
 		D272B78B1FEF6770004447E2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D272B78D1FEF6770004447E2 /* Localizable.strings */; };
 		D28F173020087B3100F5AEB2 /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F172F20087B3100F5AEB2 /* Controls.swift */; };
@@ -57,6 +60,11 @@
 		031350CFF12F685D7428A932 /* Pods-FlexSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlexSwiftDemo/Pods-FlexSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		2A1128F142210C595EFCAA18 /* Pods_FlexSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3113DD79A226E231CFABE7FC /* Pods-FlexSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlexSwiftDemo/Pods-FlexSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AD2F2E7E265E67A2008FF54B /* CustomViewController.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CustomViewController.xml; sourceTree = "<group>"; };
+		AD2F2E81265E67B9008FF54B /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		AD2F2E9C265E6D87008FF54B /* FlexSwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlexSwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		AD2F2E9D265E6D87008FF54B /* CustomViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController2.h; sourceTree = "<group>"; };
+		AD2F2E9E265E6D88008FF54B /* CustomViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController2.m; sourceTree = "<group>"; };
 		D24F2EC41FF72D1900762ADC /* AttachmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentView.swift; sourceTree = "<group>"; };
 		D272B7821FEF4BC3004447E2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D272B78C1FEF6770004447E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -159,6 +167,7 @@
 				D2D020801FEBB26F008F6DB6 /* res */,
 				D2D020691FEBA946008F6DB6 /* AppDelegate.swift */,
 				D2D0206B1FEBA946008F6DB6 /* ViewController.swift */,
+				AD2F2E81265E67B9008FF54B /* CustomViewController.swift */,
 				D2D020701FEBA946008F6DB6 /* Assets.xcassets */,
 				D2D020721FEBA946008F6DB6 /* LaunchScreen.storyboard */,
 				D2D020751FEBA946008F6DB6 /* Info.plist */,
@@ -176,6 +185,9 @@
 				D29D0D5A221BEF0700DE5543 /* TestFrameView.swift */,
 				D28F172F20087B3100F5AEB2 /* Controls.swift */,
 				D272B78D1FEF6770004447E2 /* Localizable.strings */,
+				AD2F2E9D265E6D87008FF54B /* CustomViewController2.h */,
+				AD2F2E9E265E6D88008FF54B /* CustomViewController2.m */,
+				AD2F2E9C265E6D87008FF54B /* FlexSwiftDemo-Bridging-Header.h */,
 			);
 			path = FlexSwiftDemo;
 			sourceTree = "<group>";
@@ -208,6 +220,7 @@
 				D2D020891FEBB288008F6DB6 /* TestTableCell.xml */,
 				D2D020921FEBB288008F6DB6 /* TestTableVC.xml */,
 				D2D0208B1FEBB288008F6DB6 /* TextViewVC.xml */,
+				AD2F2E7E265E67A2008FF54B /* CustomViewController.xml */,
 			);
 			name = res;
 			path = "New Group";
@@ -247,6 +260,7 @@
 				TargetAttributes = {
 					D2D020651FEBA946008F6DB6 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1240;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -298,6 +312,7 @@
 				D2D0209A1FEBB289008F6DB6 /* ViewController.xml in Resources */,
 				D2D020A61FEBB289008F6DB6 /* test.xml in Resources */,
 				D29D0D62221BF14400DE5543 /* TestXmlView.xml in Resources */,
+				AD2F2E7F265E67A2008FF54B /* CustomViewController.xml in Resources */,
 				D2D020711FEBA946008F6DB6 /* Assets.xcassets in Resources */,
 				D2D0209C1FEBB289008F6DB6 /* TestTableCell.xml in Resources */,
 				D2D020A31FEBB289008F6DB6 /* splash.png in Resources */,
@@ -354,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2F2E9F265E6D88008FF54B /* CustomViewController2.m in Sources */,
 				D2E0E2AB22059AC800D24288 /* TestXmlView.swift in Sources */,
 				D2D020B21FEC9B31008F6DB6 /* TestTextviewVC.swift in Sources */,
 				D29D0D5B221BEF0700DE5543 /* TestFrameView.swift in Sources */,
@@ -369,6 +385,7 @@
 				D2D020A81FEBB30B008F6DB6 /* TestVC.swift in Sources */,
 				D2E8049A20280DAD00B54656 /* FrameVC.swift in Sources */,
 				D2D0206A1FEBA946008F6DB6 /* AppDelegate.swift in Sources */,
+				AD2F2E82265E67B9008FF54B /* CustomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,11 +527,14 @@
 			baseConfigurationReference = 031350CFF12F685D7428A932 /* Pods-FlexSwiftDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FlexSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.weibangong.oa.FlexSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FlexSwiftDemo/FlexSwiftDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -525,11 +545,13 @@
 			baseConfigurationReference = 3113DD79A226E231CFABE7FC /* Pods-FlexSwiftDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FlexSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.weibangong.oa.FlexSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FlexSwiftDemo/FlexSwiftDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

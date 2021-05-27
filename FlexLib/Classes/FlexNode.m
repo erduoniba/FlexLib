@@ -17,6 +17,7 @@
 #import "FlexRootView.h"
 #import "FlexModalView.h"
 #import "ViewExt/UIView+Flex.h"
+#import "HDAddProperty.h"
 
 #define VIEWCLSNAME     @"viewClsName"
 #define NAME            @"name"
@@ -469,6 +470,8 @@ void FlexApplyLayoutParam(YGLayout* layout,
             view.viewAttrs.name = self.name ;
             
             if([owner needBindVariable]){
+                //[HDAddProperty instance:owner addPropertyString:self.name];
+                [HDAddProperty addAssociatedWithtarget:owner withPropertyName:self.name withValue:view];
                 [owner setValue:view forKey:self.name];
             }
         }@catch(NSException* exception){
