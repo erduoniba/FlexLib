@@ -79,7 +79,7 @@ class ViewController: FlexBaseVC {
         self.view.addSubview(view!)
     }
     @objc func onCustomView() {
-        let vc = CustomViewController2()
+        let vc = CustomViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -16,7 +16,6 @@
 @interface CustomViewController2 ()
 
 @property (nonatomic, strong) FlexRootView *rootView;
-//@property (nonatomic, strong) UILabel *fText;
 
 @end
 
@@ -28,58 +27,17 @@
     _rootView = [FlexRootView loadWithNodeFile:@"CustomViewController" Owner:self];
     [self.view addSubview:_rootView];
     
-    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
-        UILabel *label = [HDAddProperty getAssociatedValueWithTarget:self withPropertyName:@"sText"];
-        [label setViewAttr:@"text" Value:@"xxxx"];
-        
         @try {
-            
+            UILabel *label = [self valueForKey:@"sText"];
+            [label setViewAttr:@"text" Value:@"xxxx"];
+            [label setViewAttr:@"color" Value:@"#ffffff"];
         } @catch (NSException *exception) {
             NSLog(@"exception : %@", exception);
         } @finally {
             
         }
-        
-//        [self getAllProperties];
     });
-}
-
-//获取对象的所有属性
-- (NSArray *)getAllProperties {
-    u_int count;
-
-    objc_property_t *properties =class_copyPropertyList([self class], &count);
-    NSMutableArray *propertiesArray = [NSMutableArray arrayWithCapacity:count];
-    for (int i = 0; i<count; i++) {
-        const char* char_f = property_getName(properties[i]);
-        NSString *propertyName = [NSString stringWithUTF8String:char_f];
-        [propertiesArray addObject:propertyName];
-        NSLog(@"propertyName: %@ value: %@", propertyName, [self valueForKey:propertyName]);
-    }
-
-    free(properties);
-    NSLog(@"propertiesArray: %@", propertiesArray);
-    return propertiesArray;
-}
-
-- (UILabel *)getValueProperty:(NSString *)property {
-    u_int count;
-    objc_property_t *properties =class_copyPropertyList([self class], &count);
-    for (int i = 0; i<count; i++) {
-        const char* char_f = property_getName(properties[i]);
-        NSString *propertyName = [NSString stringWithUTF8String:char_f];
-        if ([property isEqualToString:propertyName]) {
-            id propertyValue = [self valueForKey:propertyName];
-            free(properties);
-            return propertyValue;
-        }
-    }
-
-    free(properties);
-    return nil;
-
 }
 
 /*

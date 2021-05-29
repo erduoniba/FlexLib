@@ -470,8 +470,7 @@ void FlexApplyLayoutParam(YGLayout* layout,
             view.viewAttrs.name = self.name ;
             
             if([owner needBindVariable]){
-                //[HDAddProperty instance:owner addPropertyString:self.name];
-                [HDAddProperty addAssociatedWithtarget:owner withPropertyName:self.name withValue:view];
+                [HDAddProperty instance:owner addPropertyString:self.name className:NSStringFromClass(view.class)];
                 [owner setValue:view forKey:self.name];
             }
         }@catch(NSException* exception){
@@ -1303,5 +1302,3 @@ NSMutableAttributedString* createAttributedString(NSArray<FlexNode*>* childElems
     }
     return attrString;
 }
-
-

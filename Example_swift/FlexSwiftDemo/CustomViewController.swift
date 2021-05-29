@@ -11,13 +11,6 @@ import FlexLib
 
 class CustomViewController: UIViewController {
     private var rootView: FlexRootView!
-    
-//    private var _fText: UILabel?
-//    @objc private var _sText: UILabel? {
-//        willSet {
-//
-//        }
-//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,23 +18,14 @@ class CustomViewController: UIViewController {
         rootView = FlexRootView.load(withNodeFile: "CustomViewController", owner: self)
         self.view.addSubview(rootView)
         
-//        _fText?.text = "xx"
-//        _sText?.text = "xx2"
-        
-//        for json in jsons {
-//            self.value(forKey: json["name"]).setValue(json["value"])
-//        }
-        
-        
         if let label = self.value(forKey: "fText") as? UILabel {
             debugPrint("label exist")
             label.setViewAttrStrings([
                 "text","点击删除"
             ])
             
-            label.setViewAttr("text", value: "点击我试试")
+            label.setViewAttr("text", value: "点击我试试11")
         }
-        
     }
     
     
